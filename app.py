@@ -1,3 +1,4 @@
+cat > app.py << EOL
 from flask import Flask, Response
 import requests
 from yt_dlp import YoutubeDL
@@ -52,3 +53,4 @@ def proxy():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=7860)
+EOL
