@@ -1,3 +1,4 @@
+cat > run.sh << EOL
 #!/bin/bash
 
 # Install dependencies
@@ -8,3 +9,4 @@ python app.py &
 
 # Tunnel using localhost.run (no warning page)
 ssh -R 80:localhost:7860 ssh.localhost.run
+EOL
